@@ -48,3 +48,11 @@ jobs:
         with:
           go-version-input: ${{`{{ env.GO_VERSION }}`}}
           go-package: ./...
+          output-format: sarif
+          output-file: results.sarif
+
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif
+          category: SCA
