@@ -1,0 +1,2 @@
+pre-files:
+  - go mod init "github.com/{{ .GitHub.Username }}/{{ .Project.Name }}"
