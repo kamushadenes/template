@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      current-tag: ${{`{{ steps.calculate-version.outputs.version-string }}`}}
+      current-tag: ${{ steps.calculate-version.outputs.version-string }}
 
     steps:
       - name: Checkout code
