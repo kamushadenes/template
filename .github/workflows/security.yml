@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+permissions:
+  actions: read
+
 env:
   GO_VERSION: 1.23.0
 
