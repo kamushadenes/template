@@ -9,6 +9,11 @@ on:
 env:
   GO_VERSION: {{ .Language.Version }}
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   SAST:
     runs-on: ubuntu-latest
